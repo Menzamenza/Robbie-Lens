@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Robbie Lens Photographie</title>
+    <link href="robbie.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .portfolio-section-photos {
+            background-color: white;
+        }
+        
+        .portfolio-section-photos h2 {
+            color: #242424;
+            margin-bottom: 80px;
+        }
+        .grid-paysages{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px 300px;
+            gap: 15px;
+        }
+        .grid-portraits{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px;
+            gap: 15px;
+        }
+        .grid-paysages img,.grid-portraits img 
+        {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .lien-conteneur-photo{
+            position: relative;
+        }
+        
+        .photo-hover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+        }
+        
+        .lien-conteneur-photo:hover .photo-hover {
+            display: flex;
+        }
+        @media screen and (max-width: 996px) {
+            .grid-paysages {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .grid-portraits {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Robbie-Lens.html" class="logo-lien">
+                <img src="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/blob/P1C6-solution/images/logo.png?raw=true" alt="Logo Robbie Lens"></a><br>
+            
+            <div>
+                <a href="Robbie-Lens.html">Accueil</a>
+                <a href="a-propos-Robbie.html">À propos</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Portfolio</h1>
+        </section>
+        <section class="portfolio-section-photos">
+            <!-- Créez ici votre grid Voyages -->
+            <h2>Paysages</h2>
+            <div class="grid-paysages">
+               <a href="paysage1.jpg" class="lien-conteneur-photo">
+                    <img src="paysage1.jpg" alt="Mont Aoraki - Nouvelle-Zélande" ></a> 
+                    <div class="photo-hover">Voir la photo</div>
+               <a href="paysage2.jpg" class="lien-conteneur-photo">
+                    <img src="paysage2.jpg" alt="Parc National d’Abel Tasman - Nouvelle-Zélande" > </a>
+                    <div class="photo-hover">Voir la photo</div>
+                <a href="paysage3.jpg" class="lien-conteneur-photo">
+                    <img src="paysage3.jpg" alt="Lac Rotorua - Nouvelle-Zélande" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+                <a href="paysage4.jpg" class="lien-conteneur-photo"> 
+                    <img src="paysage4.jpg" alt="Lac Wanaka - Nouvelle-Zélande" > </a>
+                    <div class="photo-hover">Voir la photo</div>
+                <a href="paysage5.jpg" class="lien-conteneur-photo">
+                    <img src="paysage5.jpg" alt="Mont Taranaki - Nouvelle-Zélande" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+                <a href="paysage6.jpg" class="lien-conteneur-photo">
+                    <img src="paysage6.jpg" alt="Milford Sound - Nouvelle-Zélande" > </a>
+                    <div class="photo-hover">Voir la photo</div>
+                <a href="paysage7.jpg" class="lien-conteneur-photo">
+                    <img src="paysage7.jpg" alt="Twelve Apostle - Australie" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+                <a href="paysage8.jpg" class="lien-conteneur-photo">
+                    <img src="paysage8.jpg" alt="Wai-O-Tapu - Nouvelle-Zélande" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+                <a href="paysage9.jpg" class="lien-conteneur-photo">
+                     <img src="paysage9.jpg" alt="Mont Cook - Nouvelle Zélande" ></a>
+                      <div class="photo-hover">Voir la photo</div>
+            </div><br>
+            <h2>Portraits</h2>
+            <!-- Créez ici votre grid Portraits -->
+            <div class="grid-portraits">
+                <a href="portrait1.jpg" class="lien-conteneur-photo">
+                    <img src="portrait1.jpg" alt="Portrait jeune femme 1" > </a>
+                    <div class="photo-hover">Voir la photo</div>
+                <a href="portrait2.jpg" class="lien-conteneur-photo">
+                    <img src="portrait2.jpg" alt="Portrait jeune femme 2" > </a>
+                    <div class="photo-hover">Voir la photo</div>
+                <a href="portrait3.jpg" class="lien-conteneur-photo">
+                    <img src="portrait3.jpg" alt="Portrait jeune homme 3" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+                <a href="portrait4.jpg" class="lien-conteneur-photo">
+                    <img src="portrait4.jpg" alt="Portrait jeune femme 4" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+                <a href="portrait5.jpg" class="lien-conteneur-photo">
+                    <img src="portrait5.jpg" alt="Portrait jeune femme 5" > </a>
+                    <div class="photo-hover">Voir la photo</div>
+                <a href="portrait6.jpg" class="lien-conteneur-photo">
+                    <img src="portrait6.jpg" alt="Portrait jeune femme 6" ></a>
+                     <div class="photo-hover">Voir la photo</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="pied">
+            <a href="Robbie-Lens.html" class="logo-lien"><img src="https://github.com/OpenClassrooms-Student-Center/1603881-creez-votre-site-web-avec-html5-et-css3/blob/P1C6-solution/images/logo.png?raw=true" alt="Logo Robbie Lens"></a><br>
+            <a href="https://twitter.com" target="_blank"><img src="logo-twitter.png" alt="logo-twitter" style="width: 32px;"></a>
+            <a href="https://instagram.com"><img src="insta-logo.avif" alt="logo-instagram" style="width: 32px;"></a><br>
+        </div>
+    
+    </footer>
+</body>
+</html>
